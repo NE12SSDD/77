@@ -1,0 +1,113 @@
+#include <iostream>
+#include <vector>
+
+
+
+us
+using namespace std;
+
+
+
+in
+int main() {
+    int M;
+    cout << 
+    cout
+"Enter the size of the square matrix (M): ";
+    cin >> M;
+
+    vector<vector<
+    cin >> M;
+
+    vector<vecto
+
+    cin >> M;
+
+    ve
+
+    cin >>
+int>> matrix(M, vector<int>(M));
+    cout << "Enter the elements of the matrix:" << endl;
+    
+    fo
+for (int i = 0; i < M; ++i) {
+        
+  
+for (int j = 0; j < M; ++j) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    
+            cin >> matrix[i][j];
+        }
+    }
+
+
+            cin >> matrix[i][j];
+       
+
+            cin >> matrix[i][j
+
+            cin >> 
+
+        
+// Zero out elements above the main and side diagonals
+    for (int i = 0; i < M; ++i) {
+        
+   
+for (int j = 0; j < M; ++j) {
+            
+    
+if (i < j && i + j < M - 1) {
+                matrix[i][j] = 
+                mat
+0;
+            }
+        }
+    }
+
+    
+            }
+        }
+    }
+
+   
+
+            }
+        
+
+          
+// Print the resulting matrix
+    cout << 
+  
+"Resulting matrix:" << endl;
+    
+    f
+for (int i = 0; i < M; ++i) {
+        for (int j = 0; j < M; ++j) {
+            cout << matrix[i][j] << 
+            cout << matrix
+
+            co
+" ";
+        }
+        cout << endl;
+    }
+
+    
+        }
+        cout << endl;
+    }
+
+  
+
+        }
+        cout << endl
+
+        }
+        c
+
+        }
+return 0;
+}
